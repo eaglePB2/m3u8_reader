@@ -1,0 +1,78 @@
+.container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 100
+}
+
+.glass_screen {
+    background: radial-gradient(#fff2 30%, #fff4);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #0007, -1px -1px 2px #fff, 1px 1px 2px #555;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+button {
+    margin: 15px;
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fffa;
+    background: #fff1;
+    box-shadow: 2px 2px 8px 0 #000, -2px -2px 8px 0 #fff7;
+    font-size: .75rem;
+    font-weight: 700;
+    font-family: 'Poppins', Sans-Serif;
+}
+
+button:active {
+    box-shadow: 4px 4px 8px #0007 inset, -4px -4px 8px #fff7 inset;
+    color: #999;
+}
+
+input,
+input:focus,
+button,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+input {
+    margin: 10px;
+    width: 35vw;
+    height: 2em;
+    background: transparent;
+    border-bottom: dashed 2px #fff3;
+    color: #fffa;
+    transition: border .25s;
+}
+
+input:focus {
+    color: white;
+    border-bottom: solid 2px #292;
+}
+
+/* Adjust the width of the content */
+.card-body {
+    max-width: 1440px;
+    /* Change this value to your desired maximum width */
+}
+
+/* Add this CSS to your existing stylesheet or style tag */
+/* Adjust the max-width and max-height to your desired size */
+.embed-responsive-16by9 {
+    max-width: 1280px; /* Change this to your desired width */
+    max-height: 720px; /* Change this to your desired height */
+    display: inline-table;
+}
+
+.video-js{
+    width:854px;
+    height:480px;
+}
